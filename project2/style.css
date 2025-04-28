@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: gray;
+}
+.container{
+    background-color: white;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 20px;
+    box-shadow: 3px 3px 3px rgba(0,0,0, 0.20);
+    border-radius: 12px;
+}
+.title{
+    font-size: 15px;
+}
+span{
+    font-size: 20px;
+}
+.form{
+    max-width: 600px;
+    margin: 0 auto;
+}
+.form-container{
+    margin-top: 10px;
+    display: grid;
+    /* this will fit your grid in two column and 1fr will take space */
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap:20px;
+}
+.form-detail{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    font-size: 15px;
+}
+input,select,textarea{
+font-size: 15px;
+padding: 5px;
+margin-top: 5px;
+}
+input:focus{
+    outline-color: red;
+}
+.address-bar{
+grid-column: 1 /span 2;
+}
+.address-bar textarea{
+    width: 100%;
+}
+.button_container{
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+}
+.button_container button{
+    padding: 5px 10px;
+    background-color: rgb(144, 144, 247);
+    color: black;
+    /* border will be hidden */
+    border: transparent solid 2px;
+    transition: 0.13s ease-in;
+    border-radius: 12px;
+}
+button:hover{
+    background-color: gray;
+    cursor: pointer;
+    transition: 0.13s ease-in;
+    color: white;
+}
+@media(max-width:400px)
+{
+.address-bar{
+    grid-column: 1 /span 1;
+}
+};
