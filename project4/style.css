@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-image: url(image/download.jpg);
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.name{
+    font-size: 18px;
+    color: red;  
+}
+.text{
+    /* padding: 80px; */
+    color: black;
+    margin-left:100px ;  
+}
+.pragraph{
+    letter-spacing: 0.3em;
+    font-family:Arial;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+.you{
+    font-weight: bold;
+    font-size: 30px;
+}
+/* important part for making cards */
+.card{
+    display: grid;
+    /* The grid will have as many columns as possible to fit the container's width.
+Each column will have a minimum width of 180px.
+If there's extra space, it will be distributed equally among all columns. */
+    grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+    gap: 20px;
+    max-width: 900px;
+  margin: auto 0;
+  margin-top: 50px;
+}
+.whole{  
+    max-width:180px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 3px 5px 5px rgba(1,1,1,0.2);
+    transition: 0.2s ease-in-out;
+}
+.whole:hover{
+    /* Imagine you have a square element with a side length of 100px. 
+    Applying transform: scale(1.04); to it would make it 104px on each side. */
+    transform: scale(1.04);
+    box-shadow: 3px 5px 5px rgba(1,1,1,0.3);
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+img{
+    max-width: 180px;
+}
+.content{
+    font-size: 12px;
+    padding: 10px;
+}
+.title{
+    font-size: 15px;
+    margin-top: 10px;
+}
+.pragraph1{
+    margin-top: 9px;
+    line-height: 15px;  
+}
+.grid-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* last section */
+.last-section{
+    display: flex;
+    justify-content: left;
+    width: 800px;
+    margin-top: 40px;
+}
+.contact{
+    background-color: rgb(177, 245, 177);
+  height: 180px;
+  padding: 10px;
+}
+.gmail{
+    font-weight: bold;
+}
+.about{
+    padding: 10px;
+    background-color:brown;
+    width: 500px;  
+}
+footer{
+    margin-top: 5px;
+    text-align: center;
+}
+footer h1{
+    color: white;
+    background-color: black;
+}
+@media (max-width:700px){
+.last-section{
+    display:block;
+}
+}
