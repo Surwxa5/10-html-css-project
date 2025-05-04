@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    /* it help the navbar to scroll smoothly */
+    scroll-behavior: smooth;
+}
+/* to show every thing */
+.middle-section,.vedio-section,.gift-section{
+    scroll-margin: 50px;
+    padding-top: 20px;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    top: 0;
+    position: sticky;
+    z-index: 100; 
+    background-color: rgb(7, 7, 85);
+}
+.navigation-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+}
+.title{
+    color: white;
+    font-size: 20px;
+}
+.navigation-bar ul {
+    display: flex;
+    gap: 20px;
+    list-style: none; /* Remove default list style */
+  }
+  
+  .navigation-bar ul li {
+    color: white;
+    border-bottom: 1px solid transparent;
+  }
+  .navigation-bar ul li:hover{
+border-bottom: 2px solid white;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  .hero-section{
+    background-image: url(image/hero_image.png);
+   height: 100vh;
+    /* to put the text in center */
+    display: grid;
+    place-items: center;
+    text-align: center; 
+  }
+   .content{
+    display: flex;
+  flex-direction: column;
+  gap: 30px;
+  color: white;
+  } 
+.content .title1{
+    font-size: 60px;
+}
+  .content p{
+    font-size: 12;
+  }
+  .content h5{
+    font-size: 20px;
+  }
+  /* middle section */
+  .middle-section{
+    background-color: rgb(62, 4, 62);
+  }
+  .music-section{
+    text-align: center;
+padding: 10px;
+color: white;
+  }
+  span{
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .music-section h1{
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+  .middle-section h4{
+    font-size: 14px;
+    margin-bottom:18px;
+  }
+  .music-button{
+    padding: 10px 20px;
+    color: black;
+    background-color: red;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: 0.2s ease-in;
+  }
+  .music-button:hover{
+    transform: scale(1.04);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+  }
+  .music-section p{
+    font-size: 10px;
+    margin-bottom: 15px;
+  }
+  .music-img{
+    /*will be moved up by 100px using the negative margin, and then moved back down by 100px using the relative positioning. The net effect is that the element will appear in its original position, but it will have overlapped the content above it. */
+    margin-top: -150px;
+position: relative;
+top: 200px;
+  }
+  .music-img img{
+    width: 500px;
+    text-align: center;
+  }
+  .vedio-section{
+  padding-top: 200px;
+    background-color: rgb(244, 240, 240);
+   /* we can use grid to make every thing in center */
+   display: grid;
+   /* place item is used to center the whole grid within the in grid */
+   place-items: center;
+   gap: 30px;
+  }
+  .vedio-section h1{
+    font-size: 20px;
+  }
+  .vedio-section p{
+    font-size: 12px;
+  }
+  .secondary-button{
+    padding: 10px;
+    background-color: purple;
+    border: none;
+    border-radius: 10px;
+    transition: opacity 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  .secondary-button:hover{
+    transition: 0.2s ease-in-out;
+    opacity: 0.8;
+  }
+  .mac-img img{
+    width: 500px;
+  }
+  /* for the gift section  */
+  .gift-section{
+    background-color: aliceblue;
+  }
+  .gift{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 700px;
+    margin: 0 auto;
+   padding-bottom: 50px;
+  
+  }
+  .gift-img img{
+    width: 200px;
+  }
+  .gift-text h1{
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  .gift-text p{
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .gift-text .secondary-button{
+    margin-top: 15px;
+  }
+  /* for foooter */
+  .upper-footer{
+    width: 700px;
+    margin: 0 auto;
+  }
+  .All{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: rgb(8, 8, 163);
+    padding: 20px;
+  }
+  .All h4{
+    color: white;
+  }
+  .All ul li{
+    color: white;
+    list-style-type: none;
+  }
+  /* for lower footer */
+  .footer-lower{
+   background-color: rgb(2, 2, 82);
+   padding: 10px;
+   text-align: center;
+  }
+  .footer-lower p{
+    color: white;
+  }
