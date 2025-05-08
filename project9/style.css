@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: white;
+}
+header{
+    background-color: rgb(8, 8, 155);
+    position: sticky;
+    top: 0;
+}
+.container{
+    max-width: 700px;
+    margin: 0 auto;
+}
+nav{
+    font-size: 1.1rem;
+   padding:10px;
+   display: flex;
+   justify-content: space-between;
+}
+.logo{
+    color: white;
+}
+ul{
+    font-size: 1rem;
+    display: flex;
+    gap: 20px;
+}
+ul li{
+    list-style-type: none;
+    color: white;
+    border-bottom: 1px solid transparent;
+}
+ul li:hover{
+border-bottom: 1px solid white;
+transition: 0.3s ease-in-out;
+}
+ a{
+    text-decoration: none;
+}
+/* main section */
+#hero{
+    background-color: rgb(6, 6, 88);
+    padding: 2rem 0px ;
+}
+#hero .container{
+    
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+.image img{
+    width: 100px;
+}
+.wave{
+    color: yellow;
+    font-size: 40px;
+}
+.name{
+    font-size: 40px;
+}
+.hero-container{
+    display: grid;
+    place-items: center;
+}
